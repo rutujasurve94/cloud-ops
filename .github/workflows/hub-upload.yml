@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.JINA_DEV_BOT }}
       - env:	
           GITHUB_TOKEN: ${{ secrets.JINA_DEV_BOT }}
-          repository: ${{ clone_repo_url }}
+          repository: https://github.com/rutujasurve94/jina.git
           path: jinaai-jina
       - name: Jina Hub Image Builder and Push to docker hub
         uses: jina-ai/hub-builder@master        
